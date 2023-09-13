@@ -25,5 +25,5 @@ jobs:
           run_install: |
             - recursive: true
               args: [--frozen-lockfile]
-      
+
       - run: pnpm build

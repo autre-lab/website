@@ -1,7 +1,5 @@
 ---
 import { getCollection } from "astro:content";
-// TODO: migrate to astro v4 when the picture tag is available
-import { Picture } from "@astrojs/image/components";
 import Layout from "@layouts/Layout.astro";
 import Container from "@components/container.astro";
 import Sectionhead from "@components/sectionhead.astro";
@@ -32,19 +30,31 @@ publishedBlogEntries.sort(function (a, b) {
             <li>
               <a href={`/blog/${blogPostEntry.slug}`}>
                 <div class="grid md:grid-cols-2 gap-5 md:gap-10 items-center">
-                  <Picture
+                  <img
                     src={blogPostEntry.data.image.src}
                     alt={blogPostEntry.data.image.alt}
-                    sizes="(max-width: 800px) 100vw, 800px"
+                    loading={index <= 2 ? "eager" : "lazy"}
+                    sizes="(max-width: 800px) 100vw, 620px"
+                    decoding={index <= 2 ? "sync" : "async"}
+                    class="w-full rounded-md"
+                  />
+
+                  {/*
+                    // TODO: finish convert this astro v2 picture to native html element, may need getImage()
+                    // https://www.npmjs.com/package/@astrojs/image/v/0.18.0
+                    <Picture
+                    src={blogPostEntry.data.image.src}  ✅
+                    alt={blogPostEntry.data.image.alt}  ✅
+                    sizes="(max-width: 800px) 100vw, 800px"  ✅
                     widths={[200, 400, 800]}
                     aspectRatio="16:9"
                     background="#ffffff"
                     fit="cover"
                     position="center"
-                    loading={index <= 2 ? "eager" : "lazy"}
-                    decoding={index <= 2 ? "sync" : "async"}
-                    class="w-full rounded-md"
-                  />
+                    loading={index <= 2 ? "eager" : "lazy"} ✅
+                    decoding={index <= 2 ? "sync" : "async"} ✅
+                    class="w-full rounded-md" ✅
+                  />*/}
                   <div>
                     <span class="text-blue-400 uppercase tracking-wider text-sm font-medium">
                       {blogPostEntry.data.category}
