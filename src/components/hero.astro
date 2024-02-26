@@ -1,5 +1,5 @@
 ---
-import heroImage from "assets/hero.webp";
+import heroImage from "../assets/hero.webp"
 import Link from "@components/ui/link.astro";
 import { Icon } from "astro-icon";
 import { Picture } from "astro:assets";
@@ -14,8 +14,7 @@ import { Picture } from "astro:assets";
       widths={[200, 400, 600]}
       sizes="(max-width: 800px) 100vw, 620px"
       loading="eager"
-      format="avif"
-      
+      format="webp"
     />
   </div>
   <div>
@@ -27,7 +26,8 @@ import { Picture } from "astro:assets";
       We make the web better for the others through revamping websites and
       building MVPs with modern web technology.
     </p>
-    <div class="mt-6 flex flex-col sm:flex-row gap-3">
+    <!-- TODO: come up with something else for the service -->
+    <!-- <div class="mt-6 flex flex-col sm:flex-row gap-3">
       <Link
         href="#"
         href="https://autre.wtf"
@@ -45,6 +45,6 @@ import { Picture } from "astro:assets";
         target="_blank">
         <Icon class="text-black w-4 h-4" name="bx:bxl-github" />GitHub Repo
       </Link>
-    </div>
+    </div> -->
   </div>
 </main>
