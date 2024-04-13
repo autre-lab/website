@@ -3,7 +3,7 @@ draft: false
 name: "Mike Wang"
 title: "Web Developer"
 avatar: {
-    src: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?&fit=crop&w=280",
+    src: "/src/assets/mike-wang.webp",
     alt: "Mike Wang"
 }
 publishDate: "2022-11-08 15:39"
