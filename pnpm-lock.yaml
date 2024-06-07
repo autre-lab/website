@@ -15,7 +15,7 @@ importers:
         specifier: ^2.3.1
         version: 2.3.1(astro@4.10.0(@types/node@20.14.2)(typescript@5.4.5))
       '@astrojs/sitemap':
-        specifier: ^3.1.5
+        specifier: ^3.1.4
         version: 3.1.5
       '@astrojs/tailwind':
         specifier: ^5.1.0
@@ -27,7 +27,7 @@ importers:
         specifier: ^1.1.10
         version: 1.1.10
       '@iconify-json/simple-icons':
-        specifier: ^1.1.104
+        specifier: ^1.1.102
         version: 1.1.104
       '@iconify-json/uil':
         specifier: ^1.1.8
@@ -36,7 +36,7 @@ importers:
         specifier: ^0.5.13
         version: 0.5.13(tailwindcss@3.4.4)
       astro:
-        specifier: ^4.10.0
+        specifier: ^4.8.6
         version: 4.10.0(@types/node@20.14.2)(typescript@5.4.5)
       astro-icon:
         specifier: ^1.1.0
@@ -45,13 +45,13 @@ importers:
         specifier: ^2.3.2
         version: 2.3.2
       astro-seo:
-        specifier: ^0.8.4
+        specifier: ^0.8.3
         version: 0.8.4(prettier-plugin-astro@0.13.0)(prettier@3.3.1)(typescript@5.4.5)
       sharp:
         specifier: ^0.33.4
         version: 0.33.4
       tailwindcss:
-        specifier: ^3.4.4
+        specifier: ^3.4.3
         version: 3.4.4
       typescript:
         specifier: ^5.4.5
@@ -3495,7 +3495,7 @@ snapshots:
 
   '@types/sax@1.2.7':
     dependencies:
-      '@types/node': 17.0.45
+      '@types/node': 20.14.2
 
   '@types/tar@6.1.13':
     dependencies:
